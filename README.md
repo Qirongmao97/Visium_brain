@@ -7,11 +7,11 @@ This repository accompanies the study *Spatial transcriptomics maps region and i
 | Folder | What it contains |
 | --- | --- |
 | [R/](R/README.md) | Seurat preprocessing and spot QC, summaries of regional differential expression, pathway and transcription-factor analyses, and figure generation. |
-| [notebooks/](notebooks/README.md) | Python workflow for scVI integration and scANVI transfer of brain region annotations from reference sections to unannotated sections. |
+| [Jupyter Notebook/](Jupyter Notebook/README.md) | Python workflow for scVI integration and scANVI transfer of brain region annotations from reference sections to unannotated sections. |
 
 - **To regenerate figures from existing results**, start with [the R script index](R/README.md#regional-mast-results-and-figures). Most of these scripts consume precomputed MAST tables and can be run independently of the Python workflow.
 - **To run spot QC on annotated Seurat files**, follow [the preprocessing and QC steps](R/README.md#seurat-preprocessing-and-spot-qc).
-- **To rerun label transfer**, follow [the Python instructions](notebooks/README.md). The per-sample CSVs contain the predicted label, sample ID, and original Visium barcode. When adding these annotations to individual Seurat objects, match by sample and barcode.
+- **To rerun label transfer**, follow [the Python instructions](Jupyter Notebook/README.md). The per-sample CSVs contain the predicted label, sample ID, and original Visium barcode. When adding these annotations to individual Seurat objects, match by sample and barcode.
 
 Run the examples from the repository root. By default, the scripts look for inputs under `data/` and write generated files under `results/`. The folder READMEs describe how to override these locations.
 
